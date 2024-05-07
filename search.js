@@ -28,3 +28,9 @@ function handleSortIconOnClick() {
   filterWrapper.classList.toggle("filter-wrapper-open");
   body.classList.toggle("filter-wrapper-overlay");
 }
+
+inputElement.addEventListener("keydown", (event) => {
+  if (event.key === "Enter") {
+    console.log("Performing search...");
+  }
+});
